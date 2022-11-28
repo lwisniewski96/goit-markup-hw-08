@@ -1,0 +1,49 @@
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: var(--font-roboto);
+  color: var(--fifth-color);
+  letter-spacing: 0.03em;
+  font-size: 14px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.option {
+  position: relative;
+  display: flex;
+  gap: 7px;
+  justify-content: center;
+}
+.portoflio {
+  color: var(--main-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.02em;
+}
+.backround-ourteam {
+  background-color: #f5f4fa;
+}
+.our-customers {
+  text-align: center;
+  font-weight: 700;
+}
+

@@ -1,0 +1,24 @@
+// WSZYSTKIE TEKSTY I ICH KOLORY
+
+.text__blue {
+  color: var(--main-color);
+}
+.text__blue--hover:hover,
+.text__blue--hover:focus,
+.text__blue--hover:active {
+  color: var(--main-color);
+}
+
+.text__h2 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.17;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.highlight {
+  color: var(--nineth-color);
+}
+.highlightwhite {
+  color: var(--fourth-color);
+}

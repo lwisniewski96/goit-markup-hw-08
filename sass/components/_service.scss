@@ -1,0 +1,24 @@
+.service {
+  display: flex;
+  gap: 30px;
+
+  &__list {
+    position: relative;
+  }
+
+  &__content {
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: #ffffff;
+    position: absolute;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 370px;
+    height: 70px;
+    bottom: 0;
+    background: rgba(47, 48, 58, 0.8);
+  }
+}
