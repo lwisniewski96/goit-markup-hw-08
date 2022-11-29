@@ -1,9 +1,24 @@
-.section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+// MOBILE FIRST
+
+.container {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
   }
-  .container {
-    padding: 0 15px;
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
     width: 1200px;
-    margin: 0 auto;
   }
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
