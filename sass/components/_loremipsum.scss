@@ -3,10 +3,12 @@
   // max-width: 767px;
   @media screen and (min-width: 768px) {
     display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
   }
   @media screen and (min-width: 1200px) {
     display: flex;
-    gap: 30px;
+    flex-wrap: unset;
   }
 
   &__image {
@@ -32,15 +34,24 @@
     margin-top: 30px;
 
     @media screen and (min-width: 768px) {
+      text-align: left;
     }
     @media screen and (min-width: 1200px) {
-      text-align: left;
     }
   }
 
   &__description {
     line-height: 1.71;
     color: var(--third-color);
+  }
+
+  &__item {
+    @media screen and (min-width: 768px) {
+      width: calc(50% - 15px);
+    }
+    @media screen and (min-width: 1200px) {
+      // width: calc(25% - 22.5px);
+    }
   }
 }
 

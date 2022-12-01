@@ -79,6 +79,11 @@
             </a>
           </li>
         </ul>
+        <div class="header__burger">
+          <svg width="40px" height="40px">
+            <use href="images/icons.svg#icon-menu_40px"></use>
+          </svg>
+        </div>
       </div>
     </header>
 
@@ -100,7 +105,7 @@
       <section class="section">
         <div class="container">
           <ul class="loremipsum">
-            <li>
+            <li class="loremipsum__item">
               <div class="loremipsum__image">
                 <svg width="65.32px" height="70px">
                   <use href="images/icons.svg#icon-antenna-1"></use>
@@ -114,7 +119,7 @@
               </p>
             </li>
 
-            <li>
+            <li class="loremipsum__item">
               <div class="loremipsum__image">
                 <svg width="65.32px" height="70px">
                   <use href="images/icons.svg#icon-clock-1"></use>
@@ -127,7 +132,7 @@
               </p>
             </li>
 
-            <li>
+            <li class="loremipsum__item">
               <div class="loremipsum__image">
                 <svg width="65.32px" height="70px">
                   <use href="images/icons.svg#icon-diagram-1"></use>
@@ -140,7 +145,7 @@
               </p>
             </li>
 
-            <li>
+            <li class="loremipsum__item">
               <div class="loremipsum__image">
                 <svg width="65.32px" height="70px">
                   <use href="images/icons.svg#icon-astronaut-1"></use>
@@ -156,7 +161,7 @@
         </div>
       </section>
 
-      <section class="section">
+      <section class="section service__section">
         <div class="container">
           <h2 class="text__h2">Czym się zajmujemy</h2>
 
@@ -485,23 +490,25 @@
 
         <form class="footer__form">
           <span class="footer__form-text">ZAPISZ SIĘ DO NEWSLETTERA</span>
-          <label>
-            <input
-              class="footer__form-input"
-              type="email-input"
-              name="username"
-              placeholder="E-mail"
-            />
-          </label>
-          <button class="footer__button" type="">
-            Zapisz się
-            <svg class="footer__svg" width="24" height="24">
-              <use
-                class="footer__icon"
-                href="images/icons.svg#icon-icon-send"
-              ></use>
-            </svg>
-          </button>
+          <div class="footer__form-wrapper">
+            <label class="footer__label">
+              <input
+                class="footer__form-input"
+                type="email-input"
+                name="username"
+                placeholder="E-mail"
+              />
+            </label>
+            <button class="footer__button" type="">
+              Zapisz się
+              <svg class="footer__svg" width="24" height="24">
+                <use
+                  class="footer__icon"
+                  href="images/icons.svg#icon-icon-send"
+                ></use>
+              </svg>
+            </button>
+          </div>
         </form>
       </div>
     </footer>
