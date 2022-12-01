@@ -1,6 +1,8 @@
 .loremipsum {
   margin-bottom: 30px;
+  // max-width: 767px;
   @media screen and (min-width: 768px) {
+    display: flex;
   }
   @media screen and (min-width: 1200px) {
     display: flex;
@@ -14,26 +16,26 @@
     background-color: #f5f4fa;
     height: 120px;
     border-radius: 4px;
-  }
 
-  @media screen and (min-width: 768px) {
-  }
-  @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 768px) {
+    }
+    @media screen and (min-width: 1200px) {
+    }
   }
 
   &__text {
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     text-align: center;
     font-weight: 700;
     font-size: 14px;
     margin-bottom: 10px;
     margin-top: 30px;
-  }
 
-  @media screen and (min-width: 768px) {
-  }
-  @media screen and (min-width: 1200px) {
-    flex-wrap: nowrap;
+    @media screen and (min-width: 768px) {
+    }
+    @media screen and (min-width: 1200px) {
+      text-align: left;
+    }
   }
 
   &__description {

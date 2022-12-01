@@ -1,3 +1,32 @@
+// .header {
+//   padding-block: 10px;
+//   border-bottom: 1px solid var(--headerborder-color);
+
+//   @media screen and (min-width: 768px) {
+//     padding-block: 21px;
+//   }
+
+//   @media screen and (min-width: 1200px) {
+//     padding-top: 24px;
+//     padding-bottom: 25px;
+//   }
+
+//   &__logo-link {
+//     color: var(--fifth-color);
+//     font-size: 26px;
+//     font-family: "Raleway", sans-serif;
+//     text-decoration: none;
+//     font-weight: 700;
+//   }
+
+//   &__container {
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: space-between;
+//     align-items: center;
+//   }
+// }
+
 .header {
   border-bottom: 1px solid var(--headerborder-color);
 
@@ -82,4 +111,3 @@
 .text__grey {
   color: var(--third-color);
 }
-
