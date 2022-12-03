@@ -79,11 +79,11 @@
             </a>
           </li>
         </ul>
-        <div class="header__burger">
+        <button type="button" class="header__burger" data-menu-open>
           <svg width="40px" height="40px">
             <use href="images/icons.svg#icon-menu_40px"></use>
           </svg>
-        </div>
+        </button>
       </div>
     </header>
 
@@ -202,12 +202,33 @@
           <h2 class="text__h2">Nasz Zespół</h2>
           <ul class="team__list">
             <li class="team__item">
-              <img
-                src="images/johndoe.jpg"
-                alt="product designer"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="/images/johndoe.jpg 1x, /images/johndoe.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    /images/johndoex1tablet.jpg 1x,
+                    /images/johndoex2tablet.jpg 2x
+                  "
+                />
+                <source
+                  srcset="
+                    /images/johndoex1tel.jpg 1x,
+                    /images/johndoex2tel.jpg 2x
+                  "
+                  media="(min-width:480px)"
+                />
+                <img
+                  src="images/johndoe.jpg"
+                  alt="product designer"
+                  width="270"
+                  height="260"
+                />
+              </picture>
+
               <div class="member">
                 <h3 class="member__name">John Doe</h3>
                 <p class="member__division">Product designer</p>
@@ -245,12 +266,37 @@
             </li>
 
             <li class="team__item">
-              <img
-                src="images/frontenddeveloperavatar.jpg"
-                alt="frontend developer"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    images/frontenddeveloperavatar.jpg 1x,
+                    images/frontenddeveloperavatar.jpg
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    /images/frontendtabletx1.jpg 1x,
+                    /images/frontendtabletx2.jpg 2x
+                  "
+                />
+                <source
+                  srcset="
+                    /images/frontendmobilex1.jpg 1x,
+                    /images/frontendmobilex2.jpg 2x
+                  "
+                  media="(min-width:480px)"
+                />
+
+                <img
+                  src="images/frontenddeveloperavatar.jpg"
+                  alt="frontend developer"
+                  width="270"
+                  height="260"
+                />
+              </picture>
+
               <div class="member">
                 <h3 class="member__name">John Doe</h3>
                 <p class="member__division">Frontend Developer</p>
@@ -288,12 +334,37 @@
             </li>
 
             <li class="team__item">
-              <img
-                src="images/johndoemarketing.jpg"
-                alt="marketing"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    images/johndoemarketing.jpg 1x,
+                    images/johndoemarketing.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    /images/marketingtabx1.jpg 1x,
+                    /images/marketingtab.jpg   2x
+                  "
+                />
+                <source
+                  srcset="
+                    /images/marketingmobilex1.jpg 1x,
+                    /images/marketingmobilex2.jpg 2x
+                  "
+                  media="(min-width:480px)"
+                />
+
+                <img
+                  src="images/johndoemarketing.jpg"
+                  alt="marketing"
+                  width="270"
+                  height="260"
+                />
+              </picture>
+
               <div class="member">
                 <p class="member__name">John Doe</p>
                 <p class="member__division">Marketing</p>
@@ -331,12 +402,33 @@
             </li>
 
             <li class="team__item">
-              <img
-                src="images/johndoeui.jpg"
-                alt="ui designer"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="images/johndoeui.jpg 1x, images/johndoeui.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    /images/johndoeuitabletx1.jpg 1x,
+                    /images/johndoeuitabletx2.jpg 2x
+                  "
+                />
+                <source
+                  srcset="
+                    /images/johndoeuimobilex1.jpg 1x,
+                    /images/johndoeuimobilex2.jpg 2x
+                  "
+                  media="(min-width:480px)"
+                />
+                <img
+                  src="images/johndoeui.jpg"
+                  alt="ui designer"
+                  width="270"
+                  height="260"
+                />
+              </picture>
+
               <div class="member">
                 <p class="member__name">John Doe</p>
                 <p class="member__division">UI Designer</p>
@@ -559,8 +651,9 @@
           <label class="check option">
             <input class="check__input" type="checkbox" />
             <span class="check__box"></span>
-            Oświadczam iż akceptuję
-            <span class="check__blue-text">Regulamin </span> i
+            <p class="check__text-weight">Oświadczam iż akceptuję</p>
+            <span class="check__blue-text">Regulamin </span>
+            <p class="check__text-weight">i</p>
             <span class="check__blue-text">Politykę Prywatności.</span>
           </label>
 
@@ -568,13 +661,10 @@
         </form>
       </div>
     </div>
-    -->
 
-    <!-- mobile menu -->
-    <div class="mobile-menu d-none">
-      <button class="toggle-menu">X</button>
-    </div>
-    <!-- mobile menu ends -->
+    
+
+    <script src="js/mobile-menu.js"></script>
     <script src="js/modal.js"></script>
   </body>
 </html>

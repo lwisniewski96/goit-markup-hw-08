@@ -29,8 +29,16 @@
 
   &__logo {
     margin-right: 93px;
-    padding-top: 24px;
-    padding-bottom: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    @media screen and (min-width: 768px) {
+      padding-top: 24px;
+      padding-bottom: 25px;
+    }
+
+    @media screen and (min-width: 1200px) {
+    }
   }
 
   &__logo-link {
@@ -93,12 +101,13 @@
   }
 
   &__burger {
-   
+    display: flex;
+    justify-content: right;
     @media screen and (min-width: 768px) {
+      visibility: hidden;
     }
 
     @media screen and (min-width: 1200px) {
-      display: none;
     }
   }
 }

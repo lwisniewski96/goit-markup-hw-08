@@ -2,6 +2,16 @@
   padding-left: 2.2em;
   margin-top: 20px;
 
+  &__text-weight {
+    font-size: 14px;
+
+    @media screen and (min-width: 768px) {
+    }
+
+    @media screen and (min-width: 1200px) {
+    }
+  }
+
   &__input {
     position: absolute;
     width: 1px;
@@ -13,17 +23,24 @@
     position: absolute;
     top: 0;
     left: 8px;
-    width: 15px;
-    height: 15px;
+    width: 12px;
+    height: 12px;
     overflow: hidden;
     border-radius: 0.05em;
     background-color: white;
     background-repeat: no-repeat;
     background-position: 50% 50%;
     box-shadow: 0 0 0 0.1em #4a90e2;
+
+    @media screen and (min-width: 768px) {
+    }
+
+    @media screen and (min-width: 1200px) {
+    }
   }
 
   &__blue-text {
+    font-size: 14px;
     color: var(--main-color);
     cursor: pointer;
   }
