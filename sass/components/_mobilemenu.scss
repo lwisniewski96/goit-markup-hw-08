@@ -60,4 +60,42 @@
   padding: 10px;
   color: var(--fifth-color);
   text-decoration: none;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.02em;
+}
+
+.nav-mobile-container {
+  margin-top: 302px;
+}
+
+.mobile-tel {
+  display: block;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  text-decoration: none;
+  color: #2196f3;
+  padding-bottom: 30px;
+}
+
+.mobile-mail {
+  display: block;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #757575;
+  text-decoration: none;
+}
+
+.social-mobile-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 60px;
+  color: #2196f3;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
 }
